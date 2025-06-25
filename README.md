@@ -37,4 +37,5 @@ A simple console-based Java application that helps manage student records using 
    ```bash
    javac *.java
 4. Run the Program 
-java Main
+  ```bash
+   java Main.java
