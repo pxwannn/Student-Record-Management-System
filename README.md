@@ -1,56 +1,52 @@
-🧾 Student Record Management System
-A console-based Java application to manage student records using basic CRUD operations.
-This project demonstrates core Java concepts like Object-Oriented Programming, Collections, and User Input Handling.
+# Student Record Management System (Java)
 
-🚀 Features
-   ➕ Add new student records
+A simple **console-based Student Record Management System** built with **Java, OOP, and Collections**.  
+This project demonstrates object-oriented design principles, modular architecture, and efficient in-memory operations using `LinkedHashMap`.
 
-   📋 View all students
+---
 
-   🔍 Search by roll number
+## 🚀 Features
+- **CRUD Operations**  
+  Create, Read, Update, and Delete student records from the system.
+- **OOP Design**  
+  Encapsulation (`Student` class), Abstraction (`StudentService` interface), and modular services.
+- **Collections**  
+  Uses `LinkedHashMap` for efficient in-memory storage and predictable iteration order.
+- **CLI Menu**  
+  Interactive menu powered by `Scanner`.
+- **Search & Sort**  
+  - Search students by name.  
+  - Sort students by **Name (A→Z)** or **GPA (High→Low)**.
+- **Validation**  
+  Input validation for IDs, GPA range, emails, etc.
+- **Demo Data**  
+  System starts with sample student records for convenience.
 
-   ✏️ Update student name and marks
+---
 
-   ❌ Delete student records
+## 📂 Project Structure
+Since everything is in one file, all classes are defined in **`SRMSApp.java`**:
 
-   🧭 Menu-driven CLI interface using Scanner
+- `public class SRMSApp` → Main entry point.  
+- `class SRMSCli` → Command-line interface (menu, input, interactions).  
+- `class Student` → Domain model with getters/setters.  
+- `interface StudentService` → Abstraction for student operations.  
+- `class InMemoryStudentService` → Concrete implementation using `LinkedHashMap`.  
+- `class ValidationUtils` → Input validation helpers.
 
-🛠️ Built With
-<p align="left"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="40"/> <img src="https://img.icons8.com/ios/50/command-line.png" alt="Terminal" width="36"/> </p>
-Java
+---
 
-LinkedHashMap for data storage
+## 🛠️ Requirements
+- Java 17+ (recommended, works with Java 8+)
 
-OOP principles (Encapsulation, Classes, Objects)
+---
 
-Scanner for user input
-
-▶ How to Run
-Clone this repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/YOUR_USERNAME/Student-Record-Management-System.git
-Place all .java files in the same folder:
-
-Student.java
-
-StudentDatabase.java
-
-Main.java
-
-Open a terminal inside that folder.
-
-Compile the Java files:
-
-bash
-Copy
-Edit
-javac *.java
-Run the program:
-
-bash
-Copy
-Edit
-java Main
+## ▶️ How to Run
+1. Clone or download the project.
+2. Open a terminal in the project folder.
+3. Compile the program:
+   ```bash
+   javac SRMSApp.java
+4. Run the program:
+```bash
+   java SRMSApp
