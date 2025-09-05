@@ -48,5 +48,5 @@ Since everything is in one file, all classes are defined in **`SRMSApp.java`**:
    ```bash
    javac SRMSApp.java
 4. Run the program:
-```bash
+   ```bash
    java SRMSApp
